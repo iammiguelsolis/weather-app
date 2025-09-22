@@ -1,5 +1,6 @@
 "use client";
 
+import Container from "@/components/Container";
 import Navbar from "@/components/Navbar";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
@@ -99,9 +100,10 @@ export default function Home() {
               <p>{format(parseISO(firstData?.dt_txt ?? ''), 'EEEE')}</p>
               <p className="text-lg text-gray-500">({format(parseISO(firstData?.dt_txt ?? ''), 'dd.MM.yyyy')})</p>
             </h2>
-            <div>
-
-            </div>
+            <Container className="gap-10 px-6 items-center">
+              <div className="flex flex-col px-4">
+              </div>
+            </Container>
           </div>
 
         </section>
